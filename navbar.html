@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: montserrat;
+        }
+        nav{
+            background-color:#01223a;
+            height: 80px;
+            width: 98%;
+            border-radius: 25px;
+            margin: auto;
+            margin-top: 10px;
+        }
+        .logo{
+            color:white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+        nav ul{
+            float: right ;
+            margin-right: 20px; 
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+        nav ul li a{
+            color: white;
+            font-size: 17px;
+            text-transform: uppercase;
+            padding: 7px 13px;
+            border-radius: 5px;
+        }
+        a.active,a:hover{
+            background: #042e4d;
+            transition: .5s;
+
+        }
+        .checkbtn{
+            font-size: 30px;
+            color:white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" name="" id="check" u="">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo" for="logo">Reebok</label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">SignUp</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
