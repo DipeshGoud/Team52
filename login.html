@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page</title>
     <style>
+        body{background-image: linear-gradient(to right,#4b82cf,#7759b8);
+        }
         input{
             margin-top: 10px;
             margin-bottom: 20px;
@@ -15,25 +17,34 @@
             border-bottom: 2px solid gray;
         }
         input[type="submit"] {
-  background-color: #2b619e;
+  background-image: linear-gradient(to right,#4b82cf,#7759b8);
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   font-size: 20px;
   height: 35px;
-  
 }
         h2{
             text-align: center;
-            /* padding-left: -20px; */
         }
         form{
             width: 30%;
             margin: auto;
             box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-            padding-left: 50px;
-            padding-top: 10px;
+            padding-left: auto;
+            padding-right: auto;
+            padding-top: 40px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: white;
+        }
+        a{
+            text-decoration: none;
+        }
+        p{
+            font-weight: bold;
+            color: #b09b93;
         }
     </style>
 </head>
@@ -45,8 +56,11 @@
        
         <input id="password" type="password" placeholder="Password"><br>
 
-        <input type="submit">
-
-    </form>
+        <input type="submit" value="login">
+        <br><br><br>
+    <p>Forget <a href="#">Password?</a></p>
+    <p>Don't have a account? <a href="signup.html">Sign Up</a></p>
+    <br>
+</form>
 </body>
 </html>
